@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #1A3636;
+}
+
+.weatherBox {
+    /* background-color: #677D6A; */
+    background: linear-gradient(#0353a4, #002855, #001845, #001233, #5c677d);
+    height: 70vh;
+    width: 50vw;
+    margin: auto;
+    margin-top: 15vh;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3rem;
+    color: white;
+}
+
+.searchBox {
+    /* background-color: violet; */
+    align-content: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40vw;
+}
+
+input {
+    height: 5vh;
+    width: 30vw;
+    border: 2px solid grey;
+    border-radius: 2rem;
+    padding-left: 1rem;
+}
+
+.search-btn {
+    width: 5vw;
+    height: 5vh;
+    border: 2px solid grey;
+    border-radius: 2rem;
+    background-color: #CAF0F8;
+    font-weight: 600;
+}
+
+.weatherImg img {
+    height: 15vh;
+}
+
+.weatherReport {
+    /* background-color: white; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.temp {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.location {
+    font-size: 1.5rem;
+}
+
+.info {
+    width: 40vw;
+    /* background-color: aqua; */
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.humidity,
+.windSpeed {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    color: #F5E8C7;
+}
+
+.data {
+    display: block;
+    font-size: 1.5rem;
+}
+
+.humidity img {
+    height: 7vh;
+    width: 5vw;
+}
+
+.windSpeed img {
+    height: 9vh;
+    width: 5vw;
+}
+
+@media (min-width: 768px) and (max-width: 962px) {
+
+    .weatherBox {
+        width: 80vw;
+        height: 80vh;
+    }
+
+    .searchBox {
+        width: 60vw;
+
+    }
+
+    .input {
+        width: 40vw;
+    }
+
+    .search-btn {
+        width: 20vw;
+        font-weight: 500;
+        color: black;
+    }
+
+    .info {
+        width: 60vw;
+    }
+}
+
+@media (min-width: 330px) and (max-width: 430px) {
+
+    .weatherBox {
+        width: 80vw;
+        padding: 1rem;
+    }
+
+    .searchBox {
+        width: 80vw;
+    }
+
+    input {
+        width: 50vw;
+    }
+
+    .search-btn {
+        width: 40vw;
+    }
+
+    .info {
+        width: 70vw;
+
+    }
+
+    .info img {
+        width: 5vw;
+        height: 4vh;
+        background-size: contain;
+    }
+
+    .data {
+        font-size: 1.5rem;
+    }
+
+    .search-btn {
+        width: 20vw;
+        font-weight: 500;
+        color: black;
+    }
+
+}
