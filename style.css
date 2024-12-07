@@ -130,7 +130,7 @@ input {
     }
 }
 
-@media (min-width: 330px) and (max-width: 430px) {
+@media (min-width: 320px) and (max-width: 430px) {
 
     .weatherBox {
         width: 80vw;
